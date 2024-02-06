@@ -1,0 +1,57 @@
+@font-face {
+    font-family:KhardovMystique-gxqKE;
+    src: url(../font/KhardovMystique-gxqKE.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(142, 231, 142);
+    color:whitesmoke;
+    overflow-x: hidden;
+        }
+
+h1{
+    font-family: KhardovMystique-gxqKE;
+    font-size: 9vw;
+    text-align: center;
+    padding: 30px;
+}
+footer{
+    ont-family: KhardovMystique-gxqKE;
+    font-size: 28px;
+    text-align: center;
+    background-color: black;
+    padding: 20px 50px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+li{
+    height: 35vh;
+    flex-grow: 1;
+    }
+li:hover{
+    z-index: 1;
+    }
+li:last-child{
+    flex-grow: 0;
+    }
+img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(75%);
+    transition: all 250ms;
+
+    }
+img:hover{
+    filter: grayscale(0%) brightness(100%);
+    transform: scale(1.1);
+    box-shadow: 0 0 55px 25px black;
+    }
